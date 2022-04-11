@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Colors & animations</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="project_colors">
+    <nav>
+      <!-- Menu component layout -->
+      <a href="index.html" id="logo">ZCH</a>
+      <div class="flex">
+        <ul>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#intro">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- toggle switch contaner -->
+        <div class="toggle-container">
+          <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+        </div>
+      </div>
+      <!-- BURGER MENU -->
+      <button type="button" class="burger" id="menu-btn">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+      </button>
+      <!-- MOBILE MENU  -->
+      <div class="mobile-menu hidden" id="menu">
+        <ul>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#intro">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- toggle switch contaner -->
+        <div class="toggle-container">
+          <input type="checkbox" id="switch" name="theme" /><label id="mySwitch" for="switch"
+            >Toggle</label
+          >
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="header_text">
+        <h1>Colors & animations</h1>
+        <p>Focus on color palette, dark mode and animations.</p>
+
+        <a
+          href="https://zuzanacreates.com/12c.01.02.colors-and-animations/"
+          target="_blank"
+          class="btn"
+          >Full project &#x2794;</a
+        >
+
+        <a href="https://zuzanacreates.com/12c.01.02.color-tester" target="_blank"
+          >Color tester &#x2794;</a
+        >
+      </div>
+      <div class="header_graphics"><img src="img/colors.webp" alt="mockup" /></div>
+    </header>
+    <section id="intro">
+      <div class="intro_container">
+        <h2>Colors & animations</h2>
+        <h3>Theme 12c - Design for Developers</h3>
+        <article class="intro_text">
+          <div>
+            <h4>1. Color palette</h4>
+            <p>
+              Choosing a color palette is the never-ending story for me, so I had to be strict and
+              made some decisions. My best friend was Hue Mint where I was choosing my color palette
+              from and confirming the contrast rules on Adobe Color Contrast.
+            </p>
+            <img class="graphics" src="img/desktop_color-tester.png" alt="" />
+          </div>
+          <div>
+            <h4>2. Dark theme</h4>
+            <p>
+              As a second step I made a dark theme. I used JS and local storage to do that and
+              created new variables for dark mode. However, before I had to make sure my contrast is
+              sufficient, so I have used provided color tester file to make adjustments.
+            </p>
+            <img class="graphics" src="img/localStorage.PNG" alt="" />
+          </div>
+          <div>
+            <h4>3. Animations</h4>
+            <p>
+              Last part was adding the animations, we made some progress while learning GSAP so I
+              have decided to apply scroll trigger and some simple tween while using methods gsap.to
+              and gsap.from and the best one for more than one action gsap.timeline.
+            </p>
+            <img class="graphics" src="" alt="" />
+          </div>
+        </article>
+        <div class="intro_graphics">
+          <!-- <figure><img src="img/q_mobile1.webp" alt="" /></figure>
+          <figure><img src="img/q_tablet.webp" alt="" /></figure>
+          <figure><img src="img/q_desktop1.webp" alt="" /></figure> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects_cards">
+        <article class="projects_card">
+          <div class="projects_card_graphics"><img src="img/s_desktop.webp" alt="" /></div>
+          <div class="projects_card_text">
+            <h3>Silfen</h3>
+            <p>Building dynamic website for e-shop</p>
+            <a href="silfen.html">See more</a>
+          </div>
+        </article>
+        <article class="projects_card">
+          <div class="projects_card_graphics"><img src="img/quickit1.webp" alt="" /></div>
+          <div class="projects_card_text">
+            <h3>Quickit</h3>
+            <p>Basic creation of website & digital content</p>
+            <a href="quickit.html">See more</a>
+          </div>
+        </article>
+        <article class="projects_card">
+          <div class="projects_card_graphics">
+            <img src="img/colors.webp" alt="" />
+          </div>
+          <div class="projects_card_text">
+            <h3>Colors & animations</h3>
+            <p>Focus on color palette, contrast & GSAP.</p>
+            <a href="colors.html">See more</a>
+          </div>
+        </article>
+        <article class="projects_card">
+          <div class="projects_card_graphics"><img src="img/hogwarts.webp" alt="" /></div>
+          <div class="projects_card_text">
+            <h3>Hogwarts</h3>
+            <p>Working with JSON & Vanilla JavaScript.</p>
+            <a href="hogwarts.html">See more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <h3>Designed & Built by Zuzana Chudinová</h3>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
