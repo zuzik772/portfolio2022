@@ -68,10 +68,3 @@ checkbox.addEventListener("change", () => {
   }
 });
 
-// animation
-
-// gsap.from(".header_graphics", {
-//   y: 1000,
-//   duration: 3,
-//   delay: 3,
-// });
