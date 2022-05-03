@@ -34,7 +34,9 @@ html[data-theme="dark"] {
   --color-special3: #031a31;
   --color-special4: #031a31;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* toggle */
 input[type="checkbox"] {
   height: 0;
